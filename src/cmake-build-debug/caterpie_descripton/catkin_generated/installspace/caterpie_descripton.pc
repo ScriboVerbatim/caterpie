@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: caterpie_descripton
+Description: Description of caterpie_descripton
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

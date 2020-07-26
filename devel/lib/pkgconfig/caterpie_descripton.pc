@@ -1,0 +1,8 @@
+prefix=/home/abhilash/ROS_workspaces/caterpie_ws/devel
+
+Name: caterpie_descripton
+Description: Description of caterpie_descripton
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/abhilash/ROS_workspaces/caterpie_ws/devel/lib 
+Requires: 

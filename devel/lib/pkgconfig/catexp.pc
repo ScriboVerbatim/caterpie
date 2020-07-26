@@ -1,0 +1,8 @@
+prefix=/home/abhilash/ROS_workspaces/caterpie_ws/devel
+
+Name: catexp
+Description: Description of catexp
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/abhilash/ROS_workspaces/caterpie_ws/devel/lib 
+Requires: 

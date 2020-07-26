@@ -1,0 +1,2 @@
+caterpie_descripton:caterpie_gazebo:catexp
+-DCATKIN_DEVEL_PREFIX=/home/abhilash/ROS_workspaces/caterpie_ws/devel -DCMAKE_INSTALL_PREFIX=/home/abhilash/ROS_workspaces/caterpie_ws/install -G Unix Makefiles
