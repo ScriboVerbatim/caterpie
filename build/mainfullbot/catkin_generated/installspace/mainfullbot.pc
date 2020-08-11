@@ -1,0 +1,8 @@
+prefix=/home/abhilash/ROS_workspaces/caterpie_ws/install
+
+Name: mainfullbot
+Description: Description of mainfullbot
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,949 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+    <world name="default">
+        <!--
+            A demo world for tracked vehicles.
+
+            Drive the vehicle by keyboard using arrows, or by publishing the
+            desired velocity to ~/<vehicle name>/cmd_vel
+            (x and yaw command the motion).
+        -->
+        <gui>
+            <plugin name="keyboard" filename="libKeyboardGUIPlugin.so" />
+        </gui>
+
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+
+        <model name='stairs_very_simple'>
+            <pose frame=''>0 0 0 0 0 0</pose>
+            <link name='Stairs_3'>
+                <visual name='Stairs_3_Visual_0'>
+                    <pose frame=''>0 1.725 0.075 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_0'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 1.725 0.075 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_1'>
+                    <pose frame=''>0 1.425 0.225 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_1'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 1.425 0.225 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_2'>
+                    <pose frame=''>0 1.125 0.375 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_2'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 1.125 0.375 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_3'>
+                    <pose frame=''>0 .825 0.525 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_3'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 .825 0.525 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_4'>
+                    <pose frame=''>0 0.525 0.675 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_4'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 0.525 0.675 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_5'>
+                    <pose frame=''>0 0.225 0.825 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_5'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 0.225 0.825 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_6'>
+                    <pose frame=''>0 -0.075 0.975 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_6'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -0.075 0.975 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_7'>
+                    <pose frame=''>0 -0.375 1.125 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_7'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -0.375 1.125 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_8'>
+                    <pose frame=''>0 -0.675 1.275 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_8'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -0.675 1.275 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_9'>
+                    <pose frame=''>0 -0.975 1.425 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_9'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -0.975 1.425 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_10'>
+                    <pose frame=''>0 -1.275 1.575 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_10'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -1.275 1.575 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_11'>
+                    <pose frame=''>0 -1.575 1.725 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_11'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -1.575 1.725 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_12'>
+                    <pose frame=''>0 -1.875 1.875 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_12'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -1.875 1.875 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_13'>
+                    <pose frame=''>0 -2.175 2.025 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_13'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -2.175 2.025 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_14'>
+                    <pose frame=''>0 -2.475 2.175 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_14'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -2.475 2.175 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_15'>
+                    <pose frame=''>0 -2.775 2.325 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_15'>
+                    <geometry>
+                        <box>
+                            <size>1 0.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -2.775 2.325 0 -0 0</pose>
+                </collision>
+                <visual name='Stairs_3_Visual_16'>
+                    <pose frame=''>0 -3.575 2.475 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1 1.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_16'>
+                    <geometry>
+                        <box>
+                            <size>1 1.3 0.15</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>0 -3.575 2.475 0 -0 0</pose>
+                </collision>
+
+
+                <visual name='Stairs_3_Visual_17'>
+                    <pose frame=''>-0.65 -3.575 2.65 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_17'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-0.65 -3.575 2.65 0 -0 0</pose>
+                </collision>
+
+                <visual name='Stairs_3_Visual_18'>
+                    <pose frame=''>-0.95 -3.575 2.85 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_18'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-0.95 -3.575 2.85 0 -0 0</pose>
+                </collision>
+
+                <visual name='Stairs_3_Visual_19'>
+                    <pose frame=''>-1.25 -3.575 3.05 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_19'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-1.25 -3.575 3.05 0 -0 0</pose>
+                </collision>
+
+                <visual name='Stairs_3_Visual_20'>
+                    <pose frame=''>-1.55 -3.575 3.25 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_20'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-1.55 -3.575 3.25 0 -0 0</pose>
+                </collision>
+
+                <visual name='Stairs_3_Visual_21'>
+                    <pose frame=''>-1.85 -3.575 3.45 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_21'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-1.85 -3.575 3.45 0 -0 0</pose>
+                </collision>
+
+                <visual name='Stairs_3_Visual_22'>
+                    <pose frame=''>-2.15 -3.575 3.65 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_22'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-2.15 -3.575 3.65 0 -0 0</pose>
+                </collision>
+
+                <visual name='Stairs_3_Visual_23'>
+                    <pose frame=''>-2.45 -3.575 3.85 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_23'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-2.45 -3.575 3.85 0 -0 0</pose>
+                </collision>
+
+                <visual name='Stairs_3_Visual_24'>
+                    <pose frame=''>-2.75 -3.575 4.05 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_24'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-2.75 -3.575 4.05 0 -0 0</pose>
+                </collision>
+
+
+                <visual name='Stairs_3_Visual_25'>
+                    <pose frame=''>-3.05 -3.575 4.25 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_25'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-3.05 -3.575 4.25 0 -0 0</pose>
+                </collision>
+
+
+                <visual name='Stairs_3_Visual_26'>
+                    <pose frame=''>-3.35 -3.575 4.45 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_26'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-3.35 -3.575 4.45 0 -0 0</pose>
+                </collision>
+
+
+                <visual name='Stairs_3_Visual_27'>
+                    <pose frame=''>-3.65 -3.575 4.65 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_27'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-3.65 -3.575 4.65 0 -0 0</pose>
+                </collision>
+
+
+                <visual name='Stairs_3_Visual_28'>
+                    <pose frame=''>-3.95 -3.575 4.85 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_28'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-3.95 -3.575 4.85 0 -0 0</pose>
+                </collision>
+
+
+                <visual name='Stairs_3_Visual_29'>
+                    <pose frame=''>-4.25 -3.575 5.05 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_29'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-4.25 -3.575 5.05 0 -0 0</pose>
+                </collision>
+
+
+                <visual name='Stairs_3_Visual_30'>
+                    <pose frame=''>-4.55 -3.575 5.25 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_30'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-4.55 -3.575 5.25 0 -0 0</pose>
+                </collision>
+
+
+                <visual name='Stairs_3_Visual_31'>
+                    <pose frame=''>-4.85 -3.575 5.45 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_31'>
+                    <geometry>
+                        <box>
+                            <size>0.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-4.85 -3.575 5.45 0 -0 0</pose>
+                </collision>
+
+                <visual name='Stairs_3_Visual_32'>
+                    <pose frame=''>-5.65 -3.575 5.65 0 -0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>1.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>model://stairs_textured/materials/scripts</uri>
+                            <uri>model://stairs_textured/materials/textures</uri>
+                            <name>graniteMat/Diffuse</name>
+                        </script>
+                        <ambient>1 1 1 1</ambient>
+                    </material>
+                    <meta>
+                        <layer>0</layer>
+                    </meta>
+                </visual>
+                <collision name='Stairs_3_Collision_32'>
+                    <geometry>
+                        <box>
+                            <size>1.3 1 0.2</size>
+                        </box>
+                    </geometry>
+                    <pose frame=''>-5.65 -3.575 5.65 0 -0 0</pose>
+                </collision>
+
+            </link>
+            <static>1</static>
+        </model>
+
+
+    </world>
+</sdf>

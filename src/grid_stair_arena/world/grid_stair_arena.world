@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="default">
+
+    <scene>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+    </scene>
+    
+    <gui>
+      <plugin name="keyboard" filename="libKeyboardGUIPlugin.so" />
+    </gui>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="simple_tracked">
+      <include>
+        <uri>model://stair_climber_simple</uri>
+        <pose>0 0 0 0 0 0</pose>
+        <!--  x y z r p y -->
+      </include>
+    </model>
+    
+    <model name="stairs">
+      <include>
+        <uri>model://stairs_textured</uri>
+        <pose>4 -0.5 0 0 0 1.58611</pose>
+        <!--  x y z r p y -->
+      </include>
+    </model>
+  </world>
+</sdf>

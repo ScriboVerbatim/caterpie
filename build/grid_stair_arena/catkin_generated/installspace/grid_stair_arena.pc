@@ -1,0 +1,8 @@
+prefix=/home/abhilash/ROS_workspaces/caterpie_ws/install
+
+Name: grid_stair_arena
+Description: Description of grid_stair_arena
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

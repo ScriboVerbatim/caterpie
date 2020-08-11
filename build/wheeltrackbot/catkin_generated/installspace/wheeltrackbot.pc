@@ -1,0 +1,8 @@
+prefix=/home/abhilash/ROS_workspaces/caterpie_ws/install
+
+Name: wheeltrackbot
+Description: Description of wheeltrackbot
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

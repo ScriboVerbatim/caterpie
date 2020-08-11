@@ -1,0 +1,8 @@
+prefix=/home/abhilash/ROS_workspaces/caterpie_ws/devel
+
+Name: left_track_description
+Description: Description of left_track_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

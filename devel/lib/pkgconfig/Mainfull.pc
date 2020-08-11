@@ -1,0 +1,8 @@
+prefix=/home/abhilash/ROS_workspaces/caterpie_ws/devel
+
+Name: Mainfull
+Description: Description of Mainfull
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

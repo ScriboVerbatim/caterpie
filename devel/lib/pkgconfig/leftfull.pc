@@ -1,0 +1,8 @@
+prefix=/home/abhilash/ROS_workspaces/caterpie_ws/devel
+
+Name: leftfull
+Description: Description of leftfull
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
